@@ -2,9 +2,9 @@
 
 apt-get update -qq
 apt-get install -qq libgmp3c2 wget lbzip2
-mkdir ghc-7.6.3 && cd ghc-7.6.3
+# mkdir ghc-7.6.3 && cd ghc-7.6.3
 wget https://www.haskell.org/ghc/dist/7.6.3/ghc-7.6.3-x86_64-unknown-linux.tar.bz2 --no-check-certificate
-tar xvf ghc-7.6.3-x86_64-unknown-linux.tar.bz2
+tar xvf ghc-7.6.3-x86_64-unknown-linux.tar.bz2 && cd ghc-7.6.3
 ./configure --prefix=/opt/ghc && make install
 export PATH=/opt/ghc/bin:$PATH
 
@@ -31,4 +31,8 @@ cabal install hatt     \
               MissingH \
               text-0.11.3.1
 
+cd $HOME/hephaestus-pl
+
 make test-products
+
+# https://gist.github.com/wting/8498731
