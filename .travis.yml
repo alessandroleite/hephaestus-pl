@@ -7,12 +7,12 @@ env:
   - CABALVER=1.16 GHCVER=7.6.3
 
 before_install:
-  - sudo apt-get update -qy
-  - sudo apt-get install -qq build-essential ncurses-dev haskell-platform
+  - sudo apt-get update -qy  
+  - sudo apt-get install -qq build-essential ncurses-dev
 
-script:
-  - cabal update
-  - cabal install bimap bitset parse-dimacs hxt-relaxng text-0.11.3.1
-  - cabal install hatt fgl graphviz
-  - cabal install syb MissingH
-  - make test-products
+script:  
+  - sudo ./env-config.sh  
+
+
+# https://github.com/hvr/multi-ghc-travis
+# https://downloads.haskell.org/~ghc/7.0.4/docs/html/Cabal/authors.html
