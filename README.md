@@ -1,4 +1,4 @@
-Hephaestus-PL
+Hephaestus-PL [![Build Status](https://travis-ci.org/alessandroleite/hephaestus-pl.svg)](https://travis-ci.org/alessandroleite/hephaestus-pl)
 =============
 
 Hephaestus-PL is a product line (hence _PL_) which supports generation of tools taylored to specific product derivation needs. It supports a transformational approach to product derivation, whereby one can apply flexible transformations over artifacts in order to resolve variability and create concrete solutions.
