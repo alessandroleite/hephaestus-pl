@@ -18,10 +18,11 @@ RUN cabal install bimap        \
 
 RUN cabal install hatt     \
                   fgl      \
-                  graphviz
+                  graphviz                  
 
 RUN cabal install syb      \
-                  MissingH
+                  MissingH \
+                  text-0.11.3.1
 
 RUN git clone https://github.com/rbonifacio/hephaestus-pl.git
 RUN cd hephaestus-pl
