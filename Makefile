@@ -1,3 +1,5 @@
+default: test-products
+
 none:
 
 clean:
