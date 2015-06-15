@@ -1,5 +1,7 @@
 #!/bin/bash
 
+REPOSITORY_HOME=$PWD
+
 apt-get update -qq
 apt-get install -qq libgmp3c2 wget lbzip2
 # mkdir ghc-7.6.3 && cd ghc-7.6.3
@@ -31,7 +33,7 @@ cabal install hatt     \
               MissingH \
               text-0.11.3.1
 
-cd $HOME/hephaestus-pl
+cd $REPOSITORY_HOME/hephaestus-pl
 
 make test-products
 
